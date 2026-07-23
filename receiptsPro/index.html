@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Кассовые чеки и комплект отчётных документов. Быстрое оформление и доставка по России.">
+  <title>ЧекиПРО — кассовые чеки для отчётности</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top" aria-label="ЧекиПРО">
+      <span class="logo__dot"></span><strong>ЧЕКИ<span>ПРО</span></strong>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="#advantages">Преимущества</a>
+      <a href="#process">Как это работает</a>
+      <a href="#request">Оставить заявку</a>
+    </nav>
+    <a class="header__cta" href="#request">Связаться</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__content">
+        <p class="kicker"><span></span> Работаем по всей России</p>
+        <h1>Кассовые чеки<br><em>для отчётности</em></h1>
+        <p class="hero__lead">Подготовим полный комплект документов под вашу задачу. Быстро, конфиденциально и с доставкой.</p>
+        <div class="hero__actions">
+          <a class="button" href="#request">Оставить заявку <span>↗</span></a>
+          <a class="text-link" href="#process">Как мы работаем →</a>
+        </div>
+        <div class="stats">
+          <div><b>7 лет</b><span>опыта</span></div>
+          <div><b>24/7</b><span>на связи</span></div>
+          <div><b>1–2 дня</b><span>на подготовку</span></div>
+        </div>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="receipt receipt--back"></div>
+        <div class="receipt">
+          <div class="receipt__brand">ЧЕКИ<span>ПРО</span></div>
+          <small>КАССОВЫЙ ЧЕК № 00385</small>
+          <div class="receipt__dash"></div>
+          <div class="receipt__row"><span>УСЛУГА</span><b>48 500.00</b></div>
+          <div class="receipt__row"><span>КОЛ-ВО</span><b>1</b></div>
+          <div class="receipt__total"><span>ИТОГО</span><b>48 500 ₽</b></div>
+          <div class="qr">▦</div>
+          <small>СПАСИБО ЗА ОБРАЩЕНИЕ!</small>
+        </div>
+        <div class="verified"><i>✓</i><span><b>Проверено</b><small>Данные корректны</small></span></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Наши принципы">
+      <span>ТОЧНОСТЬ</span><i>✦</i><span>СКОРОСТЬ</span><i>✦</i><span>КОНФИДЕНЦИАЛЬНОСТЬ</span><i>✦</i><span>ДОСТАВКА ПО РОССИИ</span>
+    </section>
+
+    <section class="section" id="advantages">
+      <p class="kicker"><span></span> Почему выбирают нас</p>
+      <div class="section__heading">
+        <h2>Документы, которым<br>можно <em>доверять</em></h2>
+        <p>Каждый заказ проверяет специалист. До изготовления вы получаете электронный вариант и согласовываете все данные.</p>
+      </div>
+      <div class="features">
+        <article><b>01</b><i>◎</i><h3>Точные реквизиты</h3><p>Внимательно переносим и дважды проверяем предоставленные данные.</p></article>
+        <article><b>02</b><i>⌁</i><h3>Быстрая подготовка</h3><p>Большинство заказов готовим в течение одного рабочего дня.</p></article>
+        <article><b>03</b><i>◇</i><h3>Конфиденциальность</h3><p>Данные заказа защищены и не передаются третьим лицам.</p></article>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <p class="kicker"><span></span> Простой процесс</p>
+      <h2>От заявки до готового<br><em>результата</em></h2>
+      <div class="steps">
+        <article><b>01</b><h3>Оставляете заявку</h3><p>Заполните форму — это займёт не больше минуты.</p></article>
+        <article><b>02</b><h3>Уточняем детали</h3><p>Менеджер свяжется с вами и рассчитает стоимость.</p></article>
+        <article><b>03</b><h3>Согласовываем</h3><p>Вы проверяете электронную версию до изготовления.</p></article>
+        <article><b>04</b><h3>Получаете заказ</h3><p>Отправляем готовые документы удобной службой.</p></article>
+      </div>
+    </section>
+
+    <section class="request" id="request">
+      <div class="request__copy">
+        <p class="kicker"><span></span> Свяжитесь с нами</p>
+        <h2>Обсудим вашу<br><em>задачу?</em></h2>
+        <p>Оставьте контакты. Мы ответим на вопросы и рассчитаем стоимость.</p>
+        <div class="privacy-note">Ваши данные используются только для связи по заявке.</div>
+      </div>
+      <form class="lead-form" id="lead-form" action="submit.php" method="post" novalidate>
+        <div class="field">
+          <label for="phone">Телефон <span>*</span></label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="18" required>
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="telegram">Telegram <small>необязательно</small></label>
+          <input id="telegram" name="telegram" type="text" autocomplete="off" placeholder="@username или t.me/username">
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email <span>*</span></label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="mail@example.ru" required>
+          <small class="error"></small>
+        </div>
+        <div class="field">
+          <label for="comment">Комментарий <small><span id="counter">0</span>/500</small></label>
+          <textarea id="comment" name="comment" maxlength="500" rows="4" placeholder="Коротко опишите задачу"></textarea>
+          <small class="error"></small>
+        </div>
+        <input class="website-field" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="button submit-button" type="submit"><span>Отправить заявку</span><i>↗</i></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <p class="consent">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#top"><span class="logo__dot"></span><strong>ЧЕКИ<span>ПРО</span></strong></a>
+    <p>© 2026 ЧекиПРО. Все права защищены.</p>
+    <a href="#request">Оставить заявку ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <i>✓</i><div><b>Спасибо!</b><span>Мы свяжемся с вами в ближайшее время</span></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
